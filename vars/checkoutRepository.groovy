@@ -18,7 +18,7 @@ def callAnotherJob(jobName) {
 }
 
 
-def checkoutRepository1(url1) {
+def checkoutRepository1(gitCredentialsId1, url1) {
    stage('Git Checkout') {
       steps {
         script {
@@ -27,7 +27,7 @@ def checkoutRepository1(url1) {
               usernameVariable: 'USERNAME',
               passwordVariable: 'PASSWORD')
           ]) {
-            url: url1
+            git credentialsId: ${gitCredentialsId1}, url: url1
           }
         }
       }
