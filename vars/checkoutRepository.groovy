@@ -27,7 +27,7 @@ def checkoutRepository1(gitCredentialsId1, url1) {
               usernameVariable: 'USERNAME',
               passwordVariable: 'PASSWORD')
           ]) {
-            git credentialsId: ${gitCredentialsId1}, url: url1
+            git credentialsId: ${gitCredentialsId1}, url: ${url1}
           }
         }
       }
