@@ -27,7 +27,7 @@ def checkoutRepository1() {
         )
     ]) {
 
-        sh "git clone https://$username:$password@github.com/anajovanoviic/sharedlibs.git"
+        sh "git clone https://$username:$password@github.com/anajovanoviic/didactic-system.git"
     }
 }
 
