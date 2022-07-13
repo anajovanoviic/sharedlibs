@@ -17,15 +17,15 @@ def callAnotherJob(jobName) {
         }
 }
 
-/*
+
 def checkoutRepository1(url1) {
    stage('Git Checkout') {
       steps {
         script {
           withCredentials([
             usernamePassword(credentialsId: 'github',
-              usernameVariable: 'jovanovic.ana9898@gmail.com',
-              passwordVariable: 'Pernica123Pernica')
+              usernameVariable: 'USERNAME',
+              passwordVariable: 'PASSWORD')
           ]) {
             url: url1
           }
@@ -33,5 +33,5 @@ def checkoutRepository1(url1) {
       }
     }
 }
-*/
+
 
