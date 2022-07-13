@@ -27,10 +27,6 @@ def checkoutRepository1(url1) {
               usernameVariable: 'jovanovic.ana9898@gmail.com',
               passwordVariable: 'Pernica123Pernica')
           ]) {
-            print 'username=' + username + 'password=' + password
-
-            print 'username.collect { it }=' + username.collect { it }
-            print 'password.collect { it }=' + password.collect { it }
             url: url1
           }
         }
