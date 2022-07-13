@@ -20,7 +20,7 @@ def callAnotherJob(jobName) {
 
 def checkoutRepository1(url1) {
    stage('Git Checkout') {
-      step {
+      steps {
         script {
           withCredentials([
             usernamePassword(credentialsId: 'github',
