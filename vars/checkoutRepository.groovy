@@ -28,7 +28,7 @@ def checkoutRepository1() {
         passwordVariable: 'password'
         )
     ]) {
-
+        // ovaj repo mora da bude prazan
         //sh "git clone https://$username:$password@github.com/anajovanoviic/didactic-system.git"
         sh "git clone https://$username:$password@github.com/anajovanoviic/prazanRepo.git"
     }
