@@ -1,4 +1,4 @@
-/*
+
 def checkoutRepository(gitCredentialsId1, url1) {
   stage('Git Checkout') {
             steps {
@@ -6,8 +6,8 @@ def checkoutRepository(gitCredentialsId1, url1) {
             }
         }
 }
-*/
 
+/*
 def checkoutRepository(gitCredentialsId1, url1) {
    stage('Git Checkout') {
       steps {
@@ -27,5 +27,5 @@ def checkoutRepository(gitCredentialsId1, url1) {
       }
     }
 }
-
+*/
 
