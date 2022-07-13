@@ -30,7 +30,7 @@ def checkoutRepository1() {
     ]) {
         // ovaj repo mora da bude prazan
         //sh "git clone https://$username:$password@github.com/anajovanoviic/didactic-system.git"
-        sh "git clone https://$username:$password@github.com/anajovanoviic/prazanRepo.git"
+        sh "git clone https://$username:$password@github.com/anajovanoviic/repo3.git"
     }
 }
 
