@@ -18,20 +18,16 @@ def callAnotherJob(jobName) {
 }
 
 
-def checkoutRepository1(gitCredentialsId1, url1) {
-   stage('Git Checkout') {
-      steps {
-        script {
-          withCredentials([
-            usernamePassword(credentialsId: 'github',
-              usernameVariable: 'USERNAME',
-              passwordVariable: 'PASSWORD')
-          ]) {
-            git credentialsId: ${gitCredentialsId1}, url: ${url1}
-          }
-        }
-      }
+def checkoutRepository1() {
+
+    withCredentials([
+        usernamePassword(credentialsId:'github',
+        usernameVariable: 'username',
+        passwordVariable: 'password'
+        )
+    ]) {
+
+        sh "git clone https://$username:$password@github.com/anajovanoviic/sharedlibs.git"
     }
 }
-
 
