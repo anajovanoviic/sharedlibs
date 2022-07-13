@@ -4,5 +4,5 @@ def checkoutRepository(gitCredentialsId1, url1) {
                 git credentialsId: gitCredentialsId1, url: url1
             }
         }
-  
 }
+
