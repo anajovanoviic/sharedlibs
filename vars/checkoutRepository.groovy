@@ -46,7 +46,7 @@ def checkoutRepository2(repo, branchP) {
         //sh "git clone https://$username:$password@github.com/anajovanoviic/didactic-system.git"
       def url = "https://${username}:${password}@github.com/anajovanoviic/${repo}.git"
       println(url)
-        sh "echo $repo && git clone https://$username:$password@github.com/anajovanoviic/$repo.git --branch $branchP" 
+        sh "echo $repo && git clone $url --branch $branchP" 
     }
 }
 
