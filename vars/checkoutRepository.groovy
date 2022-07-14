@@ -44,7 +44,9 @@ def checkoutRepository2(repo, branchP) {
     ]) {
         // ovaj repo mora da bude prazan
         //sh "git clone https://$username:$password@github.com/anajovanoviic/didactic-system.git"
-        sh "git clone https://$username:$password@github.com/anajovanoviic/$repo.git --branch $branchP" 
+      def url = "https://${username}:${password}@github.com/anajovanoviic/${repo}.git"
+      println(url)
+        sh "echo $repo && git clone https://$username:$password@github.com/anajovanoviic/$repo.git --branch $branchP" 
     }
 }
 
