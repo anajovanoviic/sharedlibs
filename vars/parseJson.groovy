@@ -2,7 +2,7 @@ import groovy.json.JsonSlurper
 
 
 def call() {
-    echo "Hey, How are you?"
+   
   
   String jsonURL = "http://localhost:8080/job/putanja/2/api/json?pretty=true"
   
